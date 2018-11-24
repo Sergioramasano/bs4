@@ -1,12 +1,12 @@
 //@import "mediaquares.scss";
 @import "NexaBold.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:600,700');
 //VARIABLES
 $main-font:'Open Sans', sans-serif;
 $font1:'NexaBold', sans-serif;
 $font2:'Raleway', sans-serif;
 
-$border : 1px solid white;
+$border : 1px solid;
 @mixin fs{
   font-style: italic;
 }
@@ -46,11 +46,9 @@ body{
   font-family: $main-font;
 }
 .container-fluid{
-  padding-right:256px ;
-  padding-left:256px ;}
+  padding-right:200px ;
+  padding-left:200px ;}
 .container-header{
-.logo-link{
-}
 .main-menu{
   .navbar{background-color: #24282f!important;
     .collapse{
@@ -70,9 +68,11 @@ body{
 }
 
 .aboutUs{
-  background: url(../images/test_light_02.png);
+  background-image: url(../images/test_light_02.png);
   background-repeat: no-repeat;
-  padding: 89px 256px 103px;
+  background-size: cover;
+  padding-top: 89px;
+  padding-bottom: 103px;
   font-family: $font2;
   color:white;
   h1{
@@ -82,6 +82,148 @@ body{
     font-size: 14px;
   }
 }
+.bottom{
+  background-color: #2b2f35;
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
 .white-section{
-  background-color: #fff;
+
+  padding-top: 154px;
+  padding-bottom: 27px;
+  background-color: white!important;
+  .butt{
+    display: block;
+    margin: auto;
+    padding: 16px 38px;
+    border:$border;
+    width: 164px;
+    text-decoration: none;
+    border: solid 1px #3e4146;
+    -moz-border-radius-topleft: 90px;
+    -webkit-border-top-left-radius: 90px;
+    border-top-left-radius: 90px;
+    -moz-border-radius-topright: 90px;
+    -webkit-border-top-right-radius: 90px;
+    border-top-right-radius: 90px;
+    -moz-border-radius-bottomright: 88px;
+    -webkit-border-bottom-right-radius: 88px;
+    border-bottom-right-radius: 88px;
+    -moz-border-radius-bottomleft: 87px;
+    -webkit-border-bottom-left-radius: 87px;
+    border-bottom-left-radius: 87px;
+    color: #24282f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    &:hover{
+      background-color: orangered;
+      transition: 1s ease-in-out;
+    }
+}
+  p{
+    text-align: center;
+    font-size: 24px;
+    &::after{
+      content: '';
+      height: 1px;
+      width: 76px;
+      margin: auto;
+      display: block;
+      background-color: #b5a263;
+      margin-top: 28px;
+      margin-bottom: 32px;
+    }
+  }
+.carousel-container{
+  width: 100%;
+  margin-bottom: 38px;
+  .container_photo{
+    display: inline-block;
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &:nth-child(2){
+      margin-left: 200px;
+      margin-right:200px;
+    }
+    .after_photo{
+      width: 300px;
+      height: auto;
+      padding-left: 12px;
+    .text{
+      display: inline-block;
+      font-family: $font2;
+      font-size: 16px;
+      color: #000;
+      text-transform: uppercase;
+      span{
+
+        font-size: 14px;
+        color:#b5a263 ;
+        text-transform: capitalize;
+      }
+      }
+.awesome{
+  float: right;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 116px;
+  text-align: right;
+
+  a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dedede;
+    color: #ffffff;
+    padding: 5px;
+    padding-right: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-left: 5px;
+    &:first-child{
+      padding: 5px 12px;
+&:hover{
+  background-color: cyan;
+  transition: 1s ease;
+}
+    }
+    &:nth-child(2){
+&:hover{
+  background-color: deeppink;
+  transition: 1s ease;
+}
+    }
+    &:last-child{
+      padding-right: 5px;
+      &:hover{
+        background-color: slateblue;
+        transition: 1s ease;
+      }
+    }
+
+  }
+}}
+    .image{
+      width: 300px;
+      height: 286px;
+      margin-bottom: 28px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+
+}
+.owl-theme .owl-dots .owl-dot {
+  display:none;
 }
