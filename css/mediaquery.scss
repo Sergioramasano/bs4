@@ -55,6 +55,12 @@ $border : 1px solid;
     background-size: 100% 100%;
     margin: auto;
   }
+  .socials{
+    margin-top: 30px;
+  }
+  .white-section .carousel-container .container_photo {
+    width: 100%;
+  }
   .foottext_left{
     display: block;
     width: 100%;
@@ -78,6 +84,12 @@ $border : 1px solid;
     margin: auto;
     display: block!important;
     width: 100%;
+  }
+  .form-control{
+    width: 100% !important;
+  }
+  .btn{
+    width: 100% !important;
   }
   .image {
     width: 100%;}
@@ -105,4 +117,23 @@ $border : 1px solid;
       max-width: 400px;
     }
   }
+}
+@media screen and (max-width: 1240px){
+
+  .socials{
+
+    a{
+    margin-right: 0;
+    width: 37px;
+    margin: auto!important;
+    display: block;
+    padding: 5px 8px;
+    &:nth-child(3){
+      padding: 5px 6px;
+    }
+    &:nth-child(1){
+      padding: 5px 12px;
+    }
+
+}}
 }

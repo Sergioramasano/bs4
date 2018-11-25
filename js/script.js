@@ -12,7 +12,7 @@ $(document).ready(function(){
             600:{
                 items:1
             },
-            1000:{
+            1344:{
                 items:3
             }
         }

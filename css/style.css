@@ -28,6 +28,12 @@
     background-size: 100% 100%;
     margin: auto; }
 
+  .socials {
+    margin-top: 30px; }
+
+  .white-section .carousel-container .container_photo {
+    width: 100%; }
+
   .foottext_left {
     display: block;
     width: 100%; }
@@ -47,6 +53,12 @@
     margin: auto;
     display: block !important;
     width: 100%; }
+
+  .form-control {
+    width: 100% !important; }
+
+  .btn {
+    width: 100% !important; }
 
   .image {
     width: 100%; }
@@ -71,6 +83,17 @@
       max-width: 400px; }
     .aboutUs h1 {
       max-width: 400px; } }
+@media screen and (max-width: 1240px) {
+  .socials a {
+    margin-right: 0;
+    width: 37px;
+    margin: auto !important;
+    display: block;
+    padding: 5px 8px; }
+    .socials a:nth-child(3) {
+      padding: 5px 6px; }
+    .socials a:nth-child(1) {
+      padding: 5px 12px; } }
 * {
   margin: 0;
   padding: 0;
@@ -325,17 +348,17 @@ body {
 
 .bottom .row {
   color: #6e7279; }
-  .bottom .row .col-3 p:first-child {
+  .bottom .row .col-lg-3 p:first-child {
     font-size: 14px;
     color: #cc9966;
     text-transform: uppercase;
     font-weight: 500; }
-  .bottom .row .col-2 p:first-child {
+  .bottom .row .col-lg-2 p:first-child {
     font-size: 14px;
     color: #cc9966;
     text-transform: uppercase;
     font-weight: 500; }
-  .bottom .row .col-3 form .form-group .form-control {
+  .bottom .row .col-lg-3 form .form-group .form-control {
     width: 300px;
     padding-top: 10px;
     padding-bottom: 7px;
@@ -343,7 +366,7 @@ body {
     background-color: transparent;
     border: 1px solid #6e7279;
     border-radius: 0; }
-  .bottom .row .col-3 form .form-group .btn {
+  .bottom .row .col-lg-3 form .form-group .btn {
     width: 300px;
     padding-top: 9px;
     padding-bottom: 6px;
@@ -352,10 +375,10 @@ body {
     color: white;
     border: 1px solid #6e7279;
     border-radius: 0; }
-    .bottom .row .col-3 form .form-group .btn:hover {
+    .bottom .row .col-lg-3 form .form-group .btn:hover {
       opacity: 0.2;
       transition: 1s ease-out; }
-  .bottom .row .col-3 p:first-child {
+  .bottom .row .col-lg-3 p:first-child {
     width: 300px;
     font-size: 14px;
     color: #cc9966;
