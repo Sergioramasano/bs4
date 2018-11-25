@@ -1,0 +1,108 @@
+//@import "mediaquares.scss";
+@import "NexaBold.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:600,700');
+//VARIABLES
+$main-font:'Open Sans', sans-serif;
+$font1:'NexaBold', sans-serif;
+$font2:'Raleway', sans-serif;
+
+$border : 1px solid;
+@mixin fs{
+  font-style: italic;
+}
+@mixin fw{
+  font-weight: bold;
+}
+@mixin circle{
+  border-radius:50%;
+}
+@mixin a{
+  list-style: none;
+  display: block;
+  text-decoration: none;
+}
+@mixin clear{
+  content: "";
+  display: block;
+  clear: both;
+}
+@mixin dib{
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+@media screen and (max-width: 900px) {
+  .container-fluid{
+    padding-right:20px!important; ;
+    padding-left:20px!important; ;}
+  .logo-link{
+    margin: auto;
+    display: block!important;
+  }
+  .navbar-toggler-icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    margin: auto;
+  }
+  .foottext_left{
+    display: block;
+    width: 100%;
+  }
+  .contain_soc{
+    display: block;
+    width: 100%;
+  }
+  .aboutUs{
+    text-align: center;
+    p{
+      width: 100%;
+    }
+    h1{
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 588px){
+  .logo-link{
+    margin: auto;
+    display: block!important;
+    width: 100%;
+  }
+  .image {
+    width: 100%;}
+  .carousel-container{
+    margin: auto;
+  }
+  .owl-carousel-2{
+    margin: auto;
+  }
+  .owl-carousel{
+    margin: auto;
+  }
+  .navbar-toggler{
+    display: block!important;
+  }
+  .aboutUs{
+    .col-5{
+      display: none!important;
+    }
+    text-align: center;
+    p{
+      max-width: 400px;
+    }
+    h1{
+      max-width: 400px;
+    }
+  }
+}
