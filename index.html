@@ -10,18 +10,23 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <!--JQuery-->
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/owl.carousel.js"></script>
-
     <!--BS4-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
 <!---------------==============header=============-------------------->
-<header class="container-fluid container-header">
+<header class="container-fluid container-header wow flipInY" >
     <div class="row">
         <div class="col-6 logo-link">
             <!-- Image and text -->
@@ -50,7 +55,7 @@
     </div>
 </header>
 <!--------------------================About us=================-------------------->
-<section class="aboutUs container-fluid">
+<section class="aboutUs container-fluid wow bounceIn" >
     <div class="row">
         <div class="col-12 col-lg-7">
     <h1>MORE ABOUT US</h1>
@@ -62,7 +67,7 @@
 
 
 <!--===CAROUSEL===-->
-<section class="container-fluid white-section">
+<section class="container-fluid white-section wow pulse" data-wow-offset="400">
 <p>MANAGEMENT</p>
     <div class="carousel-container owl-carousel">
     <div class="container_photo">
@@ -208,12 +213,11 @@
 </section>
 
 <!---------------==================bottom=====================---------------------->
-
-<section class="bottom container-fluid">
+<section class="bottom container-fluid wow flipInY" data-wow-offset="100">
 <div class="row">
     <div class="col hidden col-lg-1"></div>
 <div class="col-12 col-lg-3">
-    <p>ABOUT FAPOR</p>
+    <p  >ABOUT FAPOR</p>
     <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
 </div>
 
